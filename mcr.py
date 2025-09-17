@@ -33,7 +33,7 @@ def main():
     print("X = Player 1")
     print("O = Player 2")
     for n in range(9):
-        turn = not turn  # Switch turns
+        #turn = not turn  # Switch turns
         if not turn:
             print("Player 1: ", end="")
         else:
@@ -46,14 +46,17 @@ def main():
             game[i][j] = 'X'
         else:
             game[i][j] = 'O'
+        for row in game:     # ← 修改：先打印棋盘
+            print(" ".join(row))
         if is_win(game):
             print("Win!")
             break  # Terminate the game
         if n == 8:  # All cells have been filled
             print("Tie!")
         # Show the game board
-        for row in game:
-            print(" ".join(row))
+
+        turn = not turn                  # ← 修改：在本轮最后再切换回合
+
 
 if __name__ == "__main__":
     main()
