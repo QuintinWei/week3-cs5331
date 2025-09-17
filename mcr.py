@@ -1,5 +1,5 @@
-#Author:qingshuai wei(name),20250917(ID),quintin_wei(githubname)
-#Reviewer1:qingshuai wei(name),20250917,quintin_wei(githubname)
+#Author:Qingshuai Wei(name),72510399(ID),quintin_wei(githubname)
+#Reviewer1:Jiasheng Ma(name),72510387,JacksonM30(githubname)
 
 def is_win(game):
     win = False
